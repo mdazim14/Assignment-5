@@ -9,7 +9,7 @@ const searchMeal = () => {
 
 const displayMeals = meals => {
     const mealContainer = document.getElementById('meal-container');
-
+    mealContainer.innerHTML = '';
     meals.forEach(meal => {
         const mealDiv = document.createElement('div');
         mealDiv.className = 'single-result row align-items-center my-3 p-3';
