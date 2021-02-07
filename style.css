@@ -43,3 +43,9 @@ body{
     width: 80px;
     border-radius: 50%;
 }
+#imgBox img {
+    width: 100%;
+}
+#imgBox{
+    width: 200px;
+}
