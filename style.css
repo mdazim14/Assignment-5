@@ -1,20 +1,45 @@
-#countries{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+body{
+    background-color: #13141b;
+    color: #ffffff;
+    /* background-color: rgb(252, 176, 55) ; */
+    /* background-image: url(images/bg-image.png); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
 }
-.country {
-    border: 1px solid goldenrod;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    width: 300px;
+
+.form-control{
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
 }
-.country-name{
-    font-size: 45px;
-    color: hotpink;
+.btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
 }
-#countryDetail img {
-    width: 400px;
-    padding-bottom: 10px;
+
+.btn-privious{
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+.navbar-toggler {
+    border: none;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.single-result{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+.imageLogo {
+    width: 80px;
+    border-radius: 50%;
 }
