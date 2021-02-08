@@ -5,12 +5,14 @@ const searchMeal = () => {
     fetch(url)
     .then (res => res.json())
     .then( data =>  displayMeals(data.meals))
+    .catch(error => displayError('Your meal is not found!!! Please try again.'));
 }
 // searchMeal();
 const displayMeals = meals => {
     console.log(meals);
     const mealContainer = document.getElementById('meal-container');
     mealContainer.innerHTML = '';
+    
     meals.forEach(meal => {
         const mealDiv = document.createElement('div');
         console.log(meal);
@@ -31,5 +33,8 @@ const displayMeals = meals => {
         mealContainer.appendChild(mealDiv);
         
     })
-   
+}
+const displayError = error => {
+    const errorTag = document.getElementById('error-massage');
+    errorTag.innerText = error;
 }
