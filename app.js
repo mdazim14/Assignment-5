@@ -12,7 +12,7 @@ const displayMeals = meals => {
     console.log(meals);
     const mealContainer = document.getElementById('meal-container');
     mealContainer.innerHTML = '';
-    
+    errorMassage.innerText = '';
     meals.forEach(meal => {
         const mealDiv = document.createElement('div');
         console.log(meal);
@@ -35,6 +35,6 @@ const displayMeals = meals => {
     })
 }
 const displayError = error => {
-    const errorTag = document.getElementById('error-massage');
+    const errorTag = document.getElementById('errorMassage');
     errorTag.innerText = error;
 }
